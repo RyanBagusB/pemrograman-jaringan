@@ -28,4 +28,4 @@ for barang in daftar_belanja:
     print(f"{barang['nama']:<15} {barang['jumlah']:<10} {barang['harga']:<10} {sub_harga:<10}")
 
 # Total pembelian
-print(f"{'Total pembelian:':<45} {total_pembelian}")
+print(f"{'Total pembelian:'} {total_pembelian}")
