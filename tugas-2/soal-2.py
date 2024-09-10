@@ -19,8 +19,13 @@ while True:
 
 total_pembelian = hitung_total_pembelian(daftar_belanja)
 
+# Header tabel
+print(f"{'Nama':<15} {'Jumlah':<10} {'Harga':<10} {'Sub Harga':<10}")
+
+# Isi tabel
 for barang in daftar_belanja:
     sub_harga = barang['harga'] * barang['jumlah']
-    print(f"{barang['nama']} {barang['jumlah']} {sub_harga}")
+    print(f"{barang['nama']:<15} {barang['jumlah']:<10} {barang['harga']:<10} {sub_harga:<10}")
 
-print(f"Total pembelian: {total_pembelian}")
+# Total pembelian
+print(f"{'Total pembelian:'} {total_pembelian}")
