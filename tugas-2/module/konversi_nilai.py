@@ -1,5 +1,3 @@
-# konversi_nilai.py
-
 def nilai_angka_ke_huruf(nilai):
     if nilai >= 88:
         return 'A'

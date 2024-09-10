@@ -1,4 +1,3 @@
-# main.py
 from module.konversi_nilai import nilai_angka_ke_huruf
 
 nilai = int(input("Masukkan nilai angka: "))
