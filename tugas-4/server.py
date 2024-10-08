@@ -27,12 +27,12 @@ def chat_server(port):
     while True:
         data = client.recv(data_payload).decode('utf-8')
         if data:
-            print(f"Client: {data}")
+            print(f"Msg dari client: {data}")
             if data.lower() == 'exit':
                 print("Client disconnected")
                 break
 
-            server_response = input('Msg dari server: ')
+            server_response = input('Server: ')
             client.sendall(server_response.encode('utf-8'))
         
         if server_response.lower() == 'exit':

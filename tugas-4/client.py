@@ -8,7 +8,7 @@ def chat_client(host, port):
 
     try:
         while True:
-            client_message = input('Msg dari client: ')
+            client_message = input('Client: ')
             sock.sendall(client_message.encode('utf-8'))
 
             if client_message.lower() == 'exit':
@@ -17,7 +17,7 @@ def chat_client(host, port):
 
             data = sock.recv(2048).decode('utf-8')
             if data:
-                print(f"Server: {data}")
+                print(f"Msg dari server: {data}")
                 
             if data.lower() == 'exit':
                 print("Server disconnected")
