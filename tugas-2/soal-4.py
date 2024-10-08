@@ -19,14 +19,12 @@ for i in range(5):
         'nilai_huruf': huruf
     })
 
-# Tabel Header
 print("------------------------------------------------------------------------------------------")
 print(f"{'No.':<3} {'Nama Mhs':<10} {'N.Tugas':<8} {'N.Kuis':<7} {'N.UTS':<6} {'N.UAS':<6} {'Nilai Akhir':<12} {'Nilai Huruf':<10}")
 print("------------------------------------------------------------------------------------------")
 
 jumlah_A = jumlah_B = jumlah_C = jumlah_D = jumlah_E = 0
 
-# Isi tabel
 for i, mhs in enumerate(mahasiswa, start=1):
     print(f"{i:<3} {mhs['nama']:<10} {tugas:<8} {kuis:<7} {uts:<6} {uas:<6} {mhs['nilai_akhir']:<12.2f} {mhs['nilai_huruf']:<10}")
     
@@ -41,7 +39,6 @@ for i, mhs in enumerate(mahasiswa, start=1):
     elif mhs['nilai_huruf'] == 'E':
         jumlah_E += 1
 
-# Rekap Jumlah Nilai
 print("------------------------------------------------------------------------------------------")
 print(f"Jumlah A: {jumlah_A}")
 print(f"Jumlah B: {jumlah_B}")
@@ -49,7 +46,6 @@ print(f"Jumlah C: {jumlah_C}")
 print(f"Jumlah D: {jumlah_D}")
 print(f"Jumlah E: {jumlah_E}")
 
-# Grafik batang
 nilai_huruf_counts = [jumlah_A, jumlah_B, jumlah_C, jumlah_D, jumlah_E]
 huruf_labels = ['A', 'B', 'C', 'D', 'E']
 

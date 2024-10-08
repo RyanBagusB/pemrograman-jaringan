@@ -27,12 +27,10 @@ def hitung_modus(data):
         return modus_list
     return modus
 
-# Menghitung rata-rata dari 3 bilangan bulat sembarang.
 data = [3, 6, 5]
 rata_rata = hitung_rata_rata(data)
 print("Rata-rata:", rata_rata)
 
-# Buatlah program memasukkan 10 data, hitung rata2, median, dan modus
 data = []
 for i in range(10):
     angka = int(input(f"Masukkan data ke-{i+1}: "))
